@@ -81,3 +81,12 @@ while (fib_sum<= fibonacci_num){
 // sum of number of digits
 
 var sum_num  = Number(prompt("Enter the number : "))
+
+var sum = 0 
+while (sum_num != 0){
+    let r = sum_num%10
+    sum = sum + r
+    sum_num = parseInt(n/10)
+}
+
+// 
