@@ -36,3 +36,11 @@ for (var divisor = 1; divisor < perfect_num; divisor++){
     }
 }
 
+if (perfect_num == divisor_sum){
+    console.log("perfect sum");
+}
+else {
+    console.log("Not a perfect sum");
+}
+
+//
