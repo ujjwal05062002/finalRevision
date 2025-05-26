@@ -86,7 +86,18 @@ var sum = 0
 while (sum_num != 0){
     let r = sum_num%10
     sum = sum + r
-    sum_num = parseInt(n/10)
+    sum_num = parseInt(sum_num/10)
 }
 
-// 
+// reverse a digit
+
+var num_r = Number(prompt("Enter the number : "))
+let reversed_num = 0
+
+while (num_r!=0){
+    let r = num_r%10
+    reversed_num =  reversed_num*10 + r
+    num_r = parseInt(num_r/10)
+}
+
+// calculate sum of even and odd number
