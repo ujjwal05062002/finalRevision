@@ -100,4 +100,42 @@ while (num_r!=0){
     num_r = parseInt(num_r/10)
 }
 
-// calculate sum of even and odd number
+// calculate sum of even and odd digit
+
+var even_odd_sum =  Number(prompt("Enter the number : "))
+var even_sum = 0
+var odd_sum = 0
+
+
+while (even_odd_sum !=0 ){
+    let r = num%10
+    if (r%2){
+        even_sum = even_sum + r
+    }    
+    else{
+        odd_sum = odd_sum + r
+    }
+    even_odd_sum = parseInt(even_odd_sum/10)
+}
+
+// count even and odd digits
+
+var num = Number(prompt("Enter the number : "))
+
+var even_count = 0
+var odd_count = 0
+
+while (num!=0){
+    let r = num % 10
+    if (r%2==0){
+        even_count = even_count + 1
+    } 
+    else{
+        odd_count = odd_count+1
+    }
+    num = parseInt(n/10)
+}
+
+// reverse a number
+
+var num = Number(prompt("enter the number : "))
