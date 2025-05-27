@@ -136,6 +136,65 @@ while (num!=0){
     num = parseInt(n/10)
 }
 
-// reverse a number
+// neon number or not
 
-var num = Number(prompt("enter the number : "))
+var num = Number(prompt("enter the number"))
+
+var sum_of_digits = 0
+
+while (num!=0){
+    let r = num%10
+    sum_of_digits =+ r
+    num = parseInt(num)
+}
+if (sum_of_digits===num)
+console.log("Neon Number")
+else
+console.log(" Not Neon Number")
+
+// Armstrong Number
+
+var num = Number(prompt("Enter the number : "))
+var original_num  = num
+var sum = 0 
+var count = 0
+
+while (num!=0){
+    num  = parseInt(num/10)
+    count = count + 1
+}
+
+num = original_num
+
+while (num!=0){
+    let r = num%10
+    sum = sum + r**count
+    num = parseInt(num/10)
+}
+
+if (sum === original_num){
+    console.log("Armstrong Number");
+}
+else{
+    console.log("Not Armstrong Number");
+}
+
+//Palindrome Number
+
+var num = Number(prompt("Enter the number : "))
+var original_num = num
+var rev = 0
+while (num!=0){
+    let r = num%10
+    rev = 10*rev + r
+    num = parseInt(num/10)
+}
+
+if  (original_num===rev)
+    console.log("Palindrome Number");
+else
+    console.log("Not Palindrome Number");
+    
+// Print all Perfect Number
+
+var start_num = 
