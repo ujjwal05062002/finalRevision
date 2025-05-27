@@ -197,4 +197,40 @@ else
     
 // Print all Perfect Number
 
-var start_num = 
+var start_num = Number(prompt("enter the starting range"))
+var end_num = Number(prompt("enter the ending range"))
+
+console.log(`Perfect Number between ${start_num} and ${end_num} are : `);
+
+
+for (var num=start_num; num<=end_num; num++){
+    var sum = 0
+    for (var n = 1; n<num; n++){
+        if (num%n==0){
+            sum = sum+n
+        }
+    }
+    if(sum==num){
+        console.log(`${num}`);
+    }
+}
+
+// print all palindrome number in a given range
+
+var start_num = Number(prompt("Enter the starting number : "))
+var end_num = Number(prompt("Enter the ending number : "))
+console.log(`Palindrome number in a given range are :`);
+
+for (var num =start_num; num<=end_num; num++){
+    var reverse = 0
+    var original_num = num
+    var temp = num
+    while(temp!=0){
+        let r = temp%10
+        reverse = 10*reverse + r
+        temp = parseInt(temp/10)
+    }
+    if (original_num == reverse)
+        console.log(`${reverse}`);
+        
+}
